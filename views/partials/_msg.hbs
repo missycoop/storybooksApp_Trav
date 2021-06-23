@@ -1,0 +1,15 @@
+{{#if error_msg}}
+  <div class='card-alert red lighten-5'>
+    <div class='card-content error-msg red-text'>
+      <strong>Oh snap</strong> {{error_msg}}
+    </div>
+  </div>
+{{/if}}
+
+{{#if success_msg}}
+  <div class='card-alert green lighten-5'>
+    <div class='card-content success-msg green-text'>
+      <strong>Well done!</strong> {{success_msg}}
+    </div>
+  </div>
+{{/if}}

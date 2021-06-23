@@ -1,0 +1,50 @@
+{{#each errors}}
+  <div class='card-alert red lighten-5'>
+    <div class='card-content error-msg red-text'>
+      <strong>Oh snap?</strong> {{text}}
+    </div>
+  </div>
+{{else}}
+
+{{/each}}
+
+<h1>Add Story Pages</h1>
+<div class='row'>
+  <form action='/stories' method='post' class='col s12'>
+    <div class='row'>
+      <div class='input-field'>
+        <input type='text' name='title'>
+        <label for='title'>Title</label>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='input-field'>
+        <select name='status'>
+          <option value='public'>Public</option>
+          <option value='private'>Private</option>
+          <option value='unpublished'>Unpublished</option>
+        </select>
+        <label for='status'>Status</label>
+      </div>
+    </div>
+
+    <div class='row'>
+      <p>
+        <label for='filled-in-box'>
+          <input type='checkbox' name='allowComments' class='filled-in' id='filled-in-box' checked='checked' />
+          <span>Allow Comment</span>
+        </label>
+      </p>
+    </div>
+
+    <div class='row'>
+      <div class='input-field'>
+        <h5>Tell Us Your Story:</h5>
+        <textarea name='body1' class='body1' rows='10' cols='80'></textarea>
+      </div>
+    </div>
+
+    <input type='submit' value='Save' class='btn'>
+  </form>
+</div>

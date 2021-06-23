@@ -1,0 +1,9 @@
+<h1>Welcome {{user.firstName}}</h1>
+<p>Welcome to Product Order 1.0.0</p>
+<p>
+  This is a small project for create your daily story, create your own stories and spread out to the world with a knowledge that inspire people.
+</p>
+{{#if user}}
+{{else}}
+<a class="btn red darken-1" href="/auth/google"><i class="icon fab fa-google left"></i> Login With Google</a>
+{{/if}}

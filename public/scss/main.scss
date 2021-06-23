@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+
+.nav-wrapper {
+  .nav-hamburger {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+.icon{
+  margin-top: 8px;
+  margin-right: 7px;
+  font-size: 1.2rem;
+}
+
+.sidenav-icon {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.sidenav-wellcome {
+  margin-left: 1.3rem;
+}
+
+.btn-text {
+  margin-left: 13px;
+}
+
+.story-icon {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  margin-top: .5rem;
+}
+
+.story-text {
+  height: 120px;
+}
+
+.dash-status {
+  text-transform: capitalize;
+}
+
+#delete-form {
+  display: inline;
+}
+
+.card-alert {
+  .error-msg {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+  .success-msg {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+}
+
+footer {
+  margin-top: 2rem;
+}
